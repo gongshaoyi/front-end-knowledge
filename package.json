@@ -1,0 +1,16 @@
+{
+  "name": "fe-base",
+  "version": "1.0.0",
+  "description": "learn code ",
+  "main": "index.js",
+  "author": "leo-zhang",
+  "license": "MIT",
+  "scripts": {
+    "run-a": "rm -rf dist && gulp && node dist/index.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^5.2.2"
+  }
+}
