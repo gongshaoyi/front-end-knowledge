@@ -8,20 +8,24 @@ const defaultTask = () => {
     .js.pipe(dest("dist"));
 }
 
-const watcher = watch(['src'])
-watcher.on('change',(path)=>{
-    console.log('====开始编译改动====')
+// const watcher = watch(['src'])
+// watcher.on('change',(path)=>{
+//     console.log('====开始编译改动====')
 
-    let pathArr = path.split("/");
-    pathArr.pop();
-    pathArr[0] = 'dist';
-    const fPath = pathArr.join("/");
-    src(path).pipe(ts({
-        "noImplicitAny": true,
-        "target": "es5"
-    })).pipe(dest(fPath))
+//     let pathArr = path.split("/");
+//     pathArr.pop();
+//     pathArr[0] = 'dist';
+//     const fPath = pathArr.join("/");
+//     src(path)
+//       .pipe(
+//         ts({
+//           noImplicitAny: true,
+//           target: "es6",
+//         })
+//       )
+//       .pipe(dest(fPath));
 
-    console.log('====编译改动结束====')
-})
+//     console.log('====编译改动结束====')
+// })
 
 exports.default = defaultTask;
