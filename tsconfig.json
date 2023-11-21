@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"noImplicitAny": true,
 		"target": "ES5",
-		"lib": ["es6", "DOM"]
+		"lib": ["ES2016", "DOM"]
 	},
 	"include": ["src"]
 }

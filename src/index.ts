@@ -35,16 +35,46 @@ sayHello("阿米");
 // /////////////////
 
 // O1ToDelete
-import { RadomizedSet } from "./algorithm/3-data-structure-design/3-O1ToDelete";
+import {
+	RadomizedSet,
+	Solution,
+} from "./algorithm/3-data-structure-design/3-O1ToDelete";
 
-const radomizedSet = new RadomizedSet();
-console.log("radomizedSet.insert", radomizedSet.insert(0)); // true
-console.log("radomizedSet.insert", radomizedSet.insert(1)); // true
-console.log("radomizedSet.insert", radomizedSet.insert(1)); // false
-console.log("radomizedSet.insert", radomizedSet.insert(2)); // true
+// const radomizedSet = new RadomizedSet();
+// console.log("radomizedSet.insert", radomizedSet.insert(0)); // true
+// console.log("radomizedSet.insert", radomizedSet.insert(1)); // true
+// console.log("radomizedSet.insert", radomizedSet.insert(1)); // false
+// console.log("radomizedSet.insert", radomizedSet.insert(2)); // true
 
-console.log("radomizedSet.remove", radomizedSet.remove(0)); // true
-console.log("radomizedSet.remove", radomizedSet.remove(0)); // false
+// console.log("radomizedSet.remove", radomizedSet.remove(0)); // true
+// console.log("radomizedSet.remove", radomizedSet.remove(0)); // false
 
-console.log("radomizedSet.getRandom", radomizedSet.getRandom()); //
+// console.log("radomizedSet.getRandom", radomizedSet.getRandom()); //
+
+// const solution = new Solution(5, [4, 1]);
+// console.log("solution.pick", solution.pick());
+// console.log("solution.pick", solution.pick());
+// console.log("solution.pick", solution.pick());
+// console.log("solution.pick", solution.pick());
+// console.log("solution.pick", solution.pick());
+// console.log("solution.pick", solution.pick());
+
 /////////////
+
+// // median-data
+// import { MedianFinder } from "./algorithm/3-data-structure-design/4-median-data";
+// const medianFinder = new MedianFinder();
+// medianFinder.addNum(1);
+// medianFinder.addNum(2);
+// console.log("findMedian1.5", medianFinder.findMedian()); // 1.5
+// medianFinder.addNum(3);
+// console.log("findMedian2", medianFinder.findMedian()); // 2
+//////////////
+
+// caculate
+import { calculate } from "./algorithm/3-data-structure-design/5-calculator";
+console.log("====>>>2+1*3", calculate("2+1*3")); //5
+console.log("====>>>2 + 1 * 3", calculate("2 + 1 * 3")); //5
+console.log("====>>>(2+1)*3", calculate("(2+1)*3")); //9
+console.log("====>>>8 - ( 2 + 1 ) *3", calculate("8 - ( 2 + 1 ) *3")); //-1
+///////////

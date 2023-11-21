@@ -20,7 +20,7 @@ const defaultTask = () => {
 //       .pipe(
 //         ts({
 //           noImplicitAny: true,
-//           target: "es6",
+//           target: "es5",
 //         })
 //       )
 //       .pipe(dest(fPath));
